@@ -2,4 +2,22 @@ $color1: #f39031;
 $color2: #e6472c;
 $color3: #ffc329;
 
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+
+.btn-picorico{
+    background-color: $color3;
+    border-color: $color3;
+}
+.btn-picorico2{
+    background-color: $color2;
+    border-color: $color2;
+}
+.btn-picorico:hover{
+    background-color: $color1;
+    border-color: $color1;
+}
+
+.form-control:focus {
+    border-color: $color1 !important;
+    box-shadow: none !important;
+}

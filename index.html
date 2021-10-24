@@ -11,35 +11,61 @@
     <title>Pico Rico</title>
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid d-flex justify-content-center bg-light">
+    <!-- <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container d-flex justify-content-center bg-light">
             <a class="navbar-brand" href="#">
-                <img src="media/logocortado.png" class="logo" alt="Pico Rico logo">
+                <img src="media/logo.svg" class="logo" alt="Pico Rico logo">
             </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>          
         </div>
+      </nav> -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-md">
+            <a class="navbar-brand ms-3 ms-sm-5" href="index.html">
+                <img src="media/logo.svg" alt="Pico Rico Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto py-3 me-5"><!--ACA-->
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutUs">Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+                </ul>
+            </div>
+        </div>
       </nav>
 
-    <div class="container-fluid gx-0 mb-5">
+    <div class="container-fluid gx-0 mb-5" id="home">
         <div class="heroimg"></div>
     </div>
 
-    <div class="container py-5">
+    <section class="container py-5" id="aboutUs">
         <div class="row">
-            <div class="col-6 d-flex justify-content-center">
+            <div class="col-sm-12 col-md-6 d-flex justify-content-center">
                 <img src="media/picorico.png" class="img-fluid" alt="Pico Rico Logo">
             </div>
-            <div class="col-6 d-flex flex-column justify-content-center text-end">
+            <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center text-end">
                 <p class="fs-3 fw-light fontColor">Sobre Nosotros</p>
                 <p class="fs-2 fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
                 <p class="fs-5 fw-light">Eos facere ipsam quam non saepe labore? Sed ullam et quam modi exercitationem cupiditate quia ut expedita iste qui! Illo, quisquam cupiditate.Reprehenderit labore aliquid officiis temporibus quisquam.</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container py-5">
+    <section class="container py-5" id="products">
         <div class="row"> 
 
             <div class="col-lg-4 col-md-6 pb-5">
@@ -54,7 +80,7 @@
                 <div class="d-flex flex-column justify-content-between align-items-center mt-4 mb-5 text-center productInfo">
                     <p class="fs-3 productTitle">Almohaditas avellanas</p>
                     <p class="fs-5 text-muted productDesc">Almohaditas de salvado y avena rellenas de dulce de frutillas.</p>
-                    <button data-bs-toggle="modal" data-bs-target="#modalComprar" type="button" class="text-white fs-5 px-5 btn btn-warning">Comprar</button>
+                    <button data-bs-toggle="modal" data-bs-target="#modalComprar" type="button" class="text-white fs-5 px-5 btn btn-picorico">Comprar</button>
                 </div>
             </div>
 
@@ -71,7 +97,7 @@
                 <div class="d-flex flex-column justify-content-between align-items-center mt-4 mb-5 text-center productInfo">
                     <p class="fs-3 productTitle">Almohaditas limón</p>
                     <p class="fs-5 text-muted productDesc">Almohaditas de salvado y avena rellenas de dulce de limón.</p>
-                    <button data-bs-toggle="modal" data-bs-target="#modalComprar" type="button" class="text-white fs-5 px-5 btn btn-warning">Comprar</button>
+                    <button data-bs-toggle="modal" data-bs-target="#modalComprar" type="button" class="text-white fs-5 px-5 btn btn-picorico">Comprar</button>
                 </div>
             </div> 
 
@@ -87,7 +113,7 @@
                 <div class="d-flex flex-column justify-content-between align-items-center mt-4 mb-5 text-center productInfo">
                     <p class="fs-3 productTitle">Almohaditas frutilla</p>
                     <p class="fs-5 text-muted productDesc">Almohaditas de salvado y avena rellenas de dulce de frutillas.</p>
-                    <button data-bs-toggle="modal" data-bs-target="#modalComprar" type="button" class="text-white fs-5 px-5 btn btn-warning">Comprar</button>
+                    <button data-bs-toggle="modal" data-bs-target="#modalComprar" type="button" class="text-white fs-5 px-5 btn btn-picorico">Comprar</button>
                 </div>
             </div> 
 
@@ -103,7 +129,7 @@
                 <div class="d-flex flex-column justify-content-between align-items-center mt-4 mb-5 text-center productInfo">
                     <p class="fs-3 productTitle">Mix energia</p>
                     <p class="fs-5 text-muted productDesc">Elaborado con pasas, almendras, nueces, maní, banana chips y castañas.</p>
-                    <button data-bs-toggle="modal" data-bs-target="#modalComprar" type="button" class="text-white fs-5 px-5 btn btn-warning">Comprar</button>                    
+                    <button data-bs-toggle="modal" data-bs-target="#modalComprar" type="button" class="text-white fs-5 px-5 btn btn-picorico">Comprar</button>                    
                 </div>
             </div> 
 
@@ -119,7 +145,7 @@
                 <div class="d-flex flex-column justify-content-between align-items-center mt-4 mb-5 text-center productInfo">
                     <p class="fs-3 productTitle">Mix tropical</p>
                     <p class="fs-5 text-muted productDesc">Elaborado con pasas, papaya, nuez, pomelo, banana, castaña y almendra.</p>
-                    <button data-bs-toggle="modal" data-bs-target="#modalComprar" type="button" class="text-white fs-5 px-5 btn btn-warning">Comprar</button>                    
+                    <button data-bs-toggle="modal" data-bs-target="#modalComprar" type="button" class="text-white fs-5 px-5 btn btn-picorico">Comprar</button>                    
                 </div>
             </div> 
 
@@ -135,14 +161,14 @@
                 <div class="d-flex flex-column justify-content-between align-items-center mt-4 mb-5 text-center productInfo">
                     <p class="fs-3 productTitle">Mix energia sin pasas</p>
                     <p class="fs-5 text-muted productDesc">Elaborado con almendras, nueces, maní, banana chips y castañas.</p>                   
-                    <button data-bs-toggle="modal" data-bs-target="#modalComprar" type="button" class="text-white fs-5 px-5 btn btn-warning">Comprar</button>                    
+                    <button data-bs-toggle="modal" data-bs-target="#modalComprar" type="button" class="text-white fs-5 px-5 btn btn-picorico">Comprar</button>                    
                 </div>
             </div> 
             
         </div>
-    </div>
+    </section>
 
-    <div class="container-fluid bg-light py-5">
+    <section class="container-fluid bg-light py-5" id="contact">
         
         <p class="d-flex justify-content-center contactTitle py-5">Contacto</p>
         <div class="container">
@@ -176,20 +202,43 @@
                             <textarea placeholder="Deje su mensaje..." class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
                           </div>
                           <div class="d-flex justify-content-end">
-                              <input id="btnBuy" class="btn btn-warning px-5 text-white" type="submit" value="Enviar" />
+                              <input id="btnBuy" class="btn btn-picorico px-5 text-white" type="submit" value="Enviar" />
                         </div>
                       </form>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <footer class="footer">		
-		<div class="footer__container">
-            <!-- <p class="footer__legales">© Pico Rico</p>   -->          
-            <p class="footer__items">
-                <a href="https://www.instagram.com/picoricosnack/" target="_blank" rel="noreferrer" class="footer__icons"><i class="bi bi-instagram"></i></a>
-            </p>
+    <section class="container-fluid reventaBannerPic">
+        <div class="row reventaBanner">
+            <div class="col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
+                <p class="fs-3 fw-bold mb-0 text-center">¿Querés vender nuestros productos?</p>
+            </div>
+            <div class="col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
+                <button class="btn btn-picorico2 text-white px-5" data-bs-toggle="modal" data-bs-target="#reventa" type="button">Formulario</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer d-flex">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="media/logoblanco.svg" class="logoFooter" alt="Logo Pico Rico">
+            <div class="footerRightSide">
+                <a href="#home" class="footerLinks">Home</a>
+                <a href="#aboutUs" class="footerLinks">Sobre nosotros</a>
+                <a href="#products" class="footerLinks">Productos</a>
+                <a href="#contact" class="footerLinks">Contacto</a>
+                <div class="d-flex justify-content-end footerIcons py-2">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="media/facebook.png" alt="Facebook Pico Rico">
+                    </a>
+                    <a href="https://www.instagram.com/picoricosnack/" target="_blank">
+                        <img src="media/instagram.png" alt="Instagram Pico Rico">
+                    </a>
+                </div>
+            </div>
         </div>
 	</footer>
 
@@ -212,7 +261,7 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-picorico" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -230,12 +279,64 @@
                     <p>Feature in progress.</p>                    
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-picorico" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Modal 2 end-->
+    <!-- Modal 3 reventa-->
+    <div class="modal fade" id="reventa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Venta de nuestros productos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row d-flex justify-content-between g-0">
+                        <div class="col-md-12 col-lg-4">
+                            <div class="contactParrafo pb-5">
+                                <p class="contactInfo">¿Tenés un comercio y estás interesado en vender nuestros productos?</p>
+                                <p class="fs-5 text-muted">Completa el formulario para REVENDEDORES y nos contactaremos con vos. (dejar botón "close" o sacarlo? Tambien se puede salir en la X o apretando fuera)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 contactForm">
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                  <label for="inputEmail4" class="form-label">Nombre</label>
+                                  <input type="text" class="form-control" id="inputName" placeholder="ingrese su nombre">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputPassword4" class="form-label">Apellido</label>
+                                  <input  class="form-control" placeholder="ingrese su apellido">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Ingrese email">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Teléfono</label>
+                                    <input type="phone" class="form-control" id="inputEmail4" placeholder="54 0000 0000">
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                                    <textarea placeholder="Deje su mensaje..." class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                                  </div>
+                                  <div class="d-flex justify-content-end">
+                                      <input id="btnBuy" class="btn btn-picorico px-5 text-white" type="submit" value="Enviar" />
+                                </div>
+                              </form>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-picorico" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 3 reventa end-->
 
 
     
